@@ -1,0 +1,329 @@
+body { background-color: #f5f5f5;}
+/*start nav*/
+.nave {
+    z-index: 9999;
+}
+/*start end */
+/*start header */
+.header-page {
+    height: 100vh;
+    background-image: url("../images/intro-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+/*end header */
+.header-layer {
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.header-text {
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+
+}
+.header-text h1 {
+    font-size: 72px;
+    font-weight: 600;
+
+
+}
+
+.header-text h3 {
+    font-size: 40px;
+    font-weight: 400;
+    width: 22ch;
+    border-right: 3px solid;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 5s steps(22);
+    animation-iteration-count: infinite ;
+
+
+}
+@keyframes type  {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 22ch;
+    }
+
+}
+
+/*start about*/
+
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about .container
+{
+    background-color: white;
+    padding: 25px;
+}
+.about .container .row {
+    box-sizing: border-box;
+
+}
+.about-inner {
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+.about-info span{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.about-skill p {
+    margin: 0;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.about-skill meter {
+    width: 100%;
+    margin: 0;
+}
+.about-header span {
+    border-bottom:3px solid #0078ff ;
+}
+
+/*end about*/
+/*start sevices*/
+.services-header h2 {
+    color: #1e1e1e;
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.services-header hr {
+    width: 30px;
+    border: 2px solid #0078ff;
+}
+.services-item {
+    padding: 25px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 20px solid #f5f5f5;
+
+}
+.services-item h3 {
+    margin-top: 25px;
+}
+.services-item i {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 10px solid #0078ff;
+    border-radius: 100%;
+    transition: all 1s;
+    width: 130px;
+    height: 130px;
+
+}
+.services-item i:hover {
+    color: white;
+    background-color:#0078ff ;
+    border-color: rgba(203,228,240,0.9);
+
+}
+/*end sevices*/
+/*start calc sevices*/
+.calc {
+    background-image: url("../images/counters-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(18,81,228,0.7);
+}
+.calc-item i {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 10px solid #cde1f8;
+    border-radius: 100%;
+
+}
+.calc-item h4 {
+    margin-top: 15px;
+}
+/*end calc sevices*/
+/*start PORTFOLIO*/
+.portfolio {
+    padding: 25px;
+}
+.port-header h2 {
+    color: #1e1e1e;
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.port-header hr {
+    width: 30px;
+    border: 2px solid #0078ff;
+}
+.card2 {
+    cursor: pointer;
+}
+.card2 img{
+    transition: all 1s;
+}
+.card-effect {
+    overflow: hidden;
+}
+.card2:hover img{
+    transform: scale(1.2);
+
+
+}
+.port-item {
+    padding: 0;
+    box-sizing: border-box;
+    border: 20px solid #f5f5f5;
+}
+
+
+
+/*end portfolio*/
+/*start slide*/
+.slider {
+    background-image: url("../images/overlay-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.slide-layer {
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.slider-container {
+    overflow: hidden;
+    background-color: black;
+    width: 50vw;
+    height: 50vh!important;
+
+}
+.up img {
+    width: 100px!important;
+}
+.slide-text {
+    position: absolute;
+    bottom: 0;
+}
+/*end slide */
+/*start blog */
+.blog {
+    padding-bottom: 100px;
+}
+.blog-min-img {
+    width: 15%;
+    border-radius: 100%;
+}
+.blog .cardbody-2 {
+    background-color: #f7f7f7;
+}
+.blog .card-body p,i {
+    font-size: 13px;
+}
+.blog .card-body a {
+    color: black;
+    transition: all 1s;
+    text-transform: capitalize;
+}
+.blog .card-body a:hover {
+    color: #0078ff;
+}
+.blog-item {
+    box-sizing: border-box;
+
+}
+/*end blog */
+/*start footer */
+footer {
+    background-image: url("../images/overlay-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.footer-layer {
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.fot-cnt {
+    z-index: 101111;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+.footer-form header,input{
+    margin-bottom: 35px;
+}
+.footer-form header h2 span, .footer-info h2 span{
+    border-bottom: 3px solid #0078ff;
+
+}
+.footer-info .text {
+    margin-top: 35px;
+}
+.contact-info p{
+    margin: 0;
+    line-height: 30px;
+
+}
+.contact-info p i {
+    color: #0078ff;
+}
+.social {
+    margin-top: 15px;
+
+}
+.social i {
+    padding: 5px;
+    margin-left: 15px;
+    border: 3px solid #0078ff;
+    border-radius: 100%;
+    transition: all 1s;
+
+}
+.social i:hover {
+    color: white;
+    background-color:#0078ff ;
+    border-color: #a2ccff;
+}
+/*end footer */
